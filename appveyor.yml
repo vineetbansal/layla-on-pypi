@@ -18,8 +18,11 @@ install:
   # Install from pypi, but download the source code from git so we have tests
   - pip install layla
   - git clone https://github.com/vineetbansal/layla.git
-  
+
+# Not a .NET project, we build in the install step instead
+build: false
+
 test_script:
   # This is where having the intervening src folder helps
   # libraries are picked up from sys.path
-  - pytest layla/tests
+  - pytest layla\tests
