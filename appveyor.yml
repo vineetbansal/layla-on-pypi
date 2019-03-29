@@ -20,7 +20,7 @@ install:
   - conda install pip pytest
   
   # Install from pypi, but download the source code from git so we have tests
-  - pip install -v layla --no-cache-dir
+  - pip install layla --no-cache-dir
   - git clone https://github.com/vineetbansal/layla.git
 
 # Not a .NET project, we build in the install step instead
