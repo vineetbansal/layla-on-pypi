@@ -16,7 +16,7 @@ install:
   - conda info -a
   - "conda create -n test-environment python=%PYTHON_VERSION%"
   - activate test-environment
-  - conda install pytest
+  - conda install pip pytest
   
   # Install from pypi, but download the source code from git so we have tests
   - pip install -v layla --no-cache-dir
